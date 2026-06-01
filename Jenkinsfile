@@ -27,6 +27,16 @@ pipeline {
             }
         }
 
+        stage('Create local.properties') {
+            steps {
+                dir('android') {
+                    bat '''
+                    echo sdk.dir=C:\\\\Users\\\\saravanan.m\\\\AppData\\\\Local\\\\Android\\\\Sdk > local.properties
+                    '''
+                }
+            }
+        }
+
         stage('Build APK') {
             steps {
                 dir('android') {
