@@ -1,0 +1,170 @@
+.login-bg {
+  --background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .logo-circle {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+
+    ion-icon {
+      font-size: 36px;
+      color: white;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.custom-input {
+  --background: rgba(0, 0, 0, 0.2);
+  --border-radius: 12px;
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  margin-bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+
+  &.item-has-focus {
+    border-color: #00c6ff;
+    --background: rgba(0, 0, 0, 0.3);
+  }
+
+  ion-icon {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 12px;
+  }
+
+  ion-input {
+    --color: white;
+    --placeholder-color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+  }
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .checkbox-item {
+    --background: transparent;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    font-size: 14px;
+    
+    ion-checkbox {
+      --size: 18px;
+      --border-color: rgba(255, 255, 255, 0.3);
+      --checkbox-background-checked: #00c6ff;
+      --border-color-checked: #00c6ff;
+      margin-right: 8px;
+    }
+    
+    ion-label {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .forgot-link {
+    font-size: 14px;
+    color: #00c6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0072ff;
+    }
+  }
+}
+
+.login-btn {
+  --background: linear-gradient(135deg, #00c6ff, #0072ff);
+  --background-hover: linear-gradient(135deg, #0072ff, #00c6ff);
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+  margin: 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none;
+
+  &::part(native) {
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.footer-links {
+  text-align: center;
+  margin-top: 30px;
+  
+  p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+  
+  a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 4px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
