@@ -31,9 +31,10 @@ pipeline {
             steps {
                 dir('android') {
                     bat '''
-                    echo sdk.dir=C:\\\\Users\\\\Saran\\\\AppData\\\\Local\\\\Android\\\\Sdk > local.properties
+                    echo sdk.dir=C:\\\\Users\\\\Saran\\\\AppData\\\\Local\\\\Android\\\\Sdk> local.properties
                     '''
                 }
+              
             }
         }
 
